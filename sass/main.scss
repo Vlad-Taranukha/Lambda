@@ -1,0 +1,367 @@
+*{
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+body{
+  max-width: 1366px;
+  margin: 0 auto;
+
+  header{
+    background: url("../images/header_bg.jpg") left top no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .header_logo_menu{
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 10%;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+
+      .logo{
+
+      }
+
+      nav{
+        ul{
+          display: flex;
+          list-style: none;
+
+          li{
+            margin-right: 10px;
+
+            a{
+              display: inline-block;
+              font-family: 'Gentium Book Basic', serif;
+              color: #ffffff;
+              font-size: 20px;
+              font-weight: bold;
+              text-transform: capitalize;
+              text-decoration: none;
+              padding: 40px 10px 0;
+              border-top: 3px solid rgba(0,0,0,0);
+
+              &:hover{
+                border-top: 3px solid #ffffff;
+              }
+            }
+
+            ul{
+              li{
+                padding-top: 0;
+                border-top: none;
+
+                a{
+                  border-top: none;
+
+                  &:hover{
+                    border-top: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    .slogan_block{
+      padding: 0 10%;
+
+      p{
+        font: 90px "Yeseva One", cursive;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      .divider{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      .header_btns{
+        text-align: center;
+
+        button{
+          padding: 20px 50px;
+          outline: none;
+          border: 1px solid rgba(255, 255, 255, 0.75);
+          background: rgba(255, 255, 255, 0.25);
+          color: #ffffff;
+          font: 16px Lato, sans-serif;
+          text-transform: uppercase;
+
+          &:first-of-type{
+            margin-right: 20px;
+          }
+
+          &:hover{
+            border: 1px solid rgba(0,0,0, 0.75);
+            background: rgba(0,0,0, 0.25);
+          }
+        }
+      }
+    }
+  }
+
+  .right_food{
+    min-height: 100vh;
+    background:
+            linear-gradient(to right, #f5f5f5 0%,#e3e3e3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    box-sizing: border-box;
+
+    .author_comment{
+      margin-right: 50px;
+
+
+      h2{
+        text-align: center;
+        font: 30px "Yeseva One", cursive;
+        color: #cc9900;
+        margin-bottom: 30px;
+      }
+      
+      .divider{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      
+      p{
+        font: 16px Lato, sans-serif;
+        color: #4c4c4c;
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 0 30px;
+        line-height: 20px;
+      }
+      
+      .author_photo{
+        text-align: center;
+      }
+    }
+  }
+
+  .ingredients{
+    min-height: 100vh;
+    background: url("../images/ingridients_bg.jpg") left top no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10%;
+
+    .ingredients_info{
+      padding: 80px;
+      background: rgba(0,0,0,0.5);
+      max-width: 37.5%;
+
+      h2{
+        text-align: center;
+        font: 30px "Yeseva One", cursive;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+      
+      .divider{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      p{
+        font: 16px Lato, sans-serif;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .ingredients_images{
+        display: flex;
+        justify-content: space-around;
+
+        img{
+          border-radius: 50%;
+          border: 4px solid rgba(25,25,25,0.5);
+        }
+      }
+    }
+  }
+
+  .reviews{
+    min-height: 100vh;
+    background: url("../images/review_bg.jpg")left top no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .review{
+      padding: 80px 50px;
+      max-width: 50%;
+      background: rgba(0,0,0,0.75);
+      box-sizing: border-box;
+      
+      h2{
+        text-align: center;
+        font: 30px "Yeseva One", cursive;
+        color: #ffffff;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+      }
+      
+      .divider{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      p{
+        font: 16px 'Gentium Book Basic', serif;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .sign{
+        font: 14px Lato, sans-serif;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+
+  }
+
+  .pre_footer{
+    min-height: 100vh;
+    background:
+            url("../images/right_f_bg.png") left top no-repeat,
+            linear-gradient(to right, #f5f5f5 0%,#e3e3e3 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+
+    .pre_images{
+      display: flex;
+
+      img{
+        margin-right: 20px;
+      }
+
+    }
+    
+    .pre_form{
+      h2{
+        text-align: center;
+        font: 30px "Yeseva One", cursive;
+        color: #cc9900;
+        margin-bottom: 30px;
+      }
+      
+      .divider{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      
+      p{
+        text-align: center;
+        font: 16px Lato, sans-serif;
+        color: #4c4c4c;
+
+        &:first-of-type{
+          margin-bottom: 20px;
+        }
+
+        &:last-of-type{
+          margin-bottom: 40px;
+        }
+      }
+
+      form{
+        .form_row{
+          display: flex;
+          justify-content: space-between;
+
+          label{
+            display: flex;
+            flex-direction: column;
+            font: bold 16px Lato, sans-serif;
+            color: #cc9900;
+            margin-bottom: 25px;
+
+            input{
+              margin-top: 10px;
+              border: 1px solid #c8c6c6;
+              padding: 15px;
+              width: 100%;
+
+
+              &:focus{
+                border: 1px solid #cc9900;
+                outline: none;
+              }
+            }
+          }
+        }
+        
+        .submit_btn{
+          text-align: center;
+
+          input{
+            padding: 10px 50px;
+            background: #cc9900;
+            color: #ffffff;
+            border: none;
+          }
+        }
+      }
+    }
+
+  }
+
+  footer{
+    background: #191919;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+
+    &>div{
+      width: 30%;
+
+      h3{
+        text-align: center;
+        font: 24px "Yeseva One", cursive;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+      }
+
+      .divider{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      p{
+        text-align: center;
+        color: #ffffff;
+        font: 16px Lato, sans-serif;
+
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+}
+
