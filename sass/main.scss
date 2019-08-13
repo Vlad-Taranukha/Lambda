@@ -199,6 +199,79 @@ body{
     }
   }
 
+  .menu{
+    padding: 100px;
+    min-height: 100vh;
+    background:
+            url("../images/menu_bg.png"),
+            linear-gradient(to right, #e6eaea 0%, #f9fafa 100%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .menu_section{
+      width: 40%;
+      margin-bottom: 60px;
+      
+      h3{
+        text-align: center;
+        text-transform: capitalize;
+        font: 24px "Yeseva One", cursive;
+        color: #cc9900;
+        margin-bottom: 20px;
+      }
+
+      .divider{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .dish_list{
+
+
+        .dish{
+          margin-bottom: 30px;
+          padding: 10px;
+
+          .dish_name_price{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #cc9900;
+            margin-bottom: 10px;
+            font: 18px "Yeseva One", cursive;
+            color: #cc9900;
+            text-transform: capitalize;
+          }
+          .dish_description{
+            p{
+              font: 16px Lato, sans-serif;
+              color: #4c4c4c;
+            }
+          }
+        }
+
+        .special{
+          border: 1px solid #cc9900;
+          position: relative;
+
+          &::before{
+            content: 'Special';
+            position: absolute;
+            top: -30px;
+            right: -1px;
+            padding: 5px 10px;
+            font: 16px Lato, sans-serif;
+            color: #ffffff;
+            background: #cc9900;
+          }
+        }
+      }
+
+
+    }
+  }
+
   .reviews{
     min-height: 100vh;
     background: url("../images/review_bg.jpg")left top no-repeat;
